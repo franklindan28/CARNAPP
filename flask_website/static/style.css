@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Play&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Roboto Condensed', sans-serif, 'Righteous', 'Fugaz One', 'Play';
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(images/massage.jfif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #24252A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 100000;
+    transition: 0.6s;
+    padding: 30px 10%;
+}
+
+header.sticky{
+    padding: 5px, 100px;
+    background: rgb(197, 197, 195);
+}
+
+header .logo{
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav-links li a{
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: #0089a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+header.sticky nav ul li a{
+    color: #000;
+}
+
+header.sticky button{
+    color: #000;
+}
+
+
+.text-box{
+    width: 90%;
+    color: #53aaf6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 50px;
+    font-family: 'Fugaz One';
+}
+
+
+/*
+.wrapper{
+    display: flex;
+    color: white;
+    height: 100vh;
+    text-align: center;
+}
+*/
+.typing{
+    position: relative;
+    margin: 10px 0 40px;
+    font-size: 40px;
+    color: #fff;
+    
+}
+
+.typing::after{
+    content: "";
+    position: relative;
+    width: 2px;
+    height: 80px;
+    border-right: 5px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.text-box p{
+
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+}
+
+.hero-btn:hover{
+    border: 1px solid #568ab8;
+    background: #568ab8;
+    transition: 1s;
+}
+
+/*----- safetytrust -----*/
+
+.safetytrust{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.sat{
+    font-size: 25px;
+}
+
+.des1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.des2{
+    font-size: 25px;
+    color: #656569;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.safetytrust-col{
+    flex-basis: 31%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+    margin-right: 2%;
+}
+img{
+    padding: 5px;
+    width: 110px;
+}
+.safetytrust-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*----- should do -----*/
+
+.do{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 50%;
+}
+
+.dotitle{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.incharge{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.p-dotitle{
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    padding:  8px 12px;
+    width: 50%;
+}
+
+.do-email{
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    padding:  8px 12px;
+    width: 50%;
+}
+
+
+
+
+/*----- Footer -----*/
+/*
+.footer{
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 30px 0;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+img{
+    padding: 5px;
+    width: 110px;
+    border-radius: 10px;
+}
+.aboutus-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+*/
